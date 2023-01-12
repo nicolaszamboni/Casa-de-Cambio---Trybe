@@ -1,14 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+}
+
+body {
+  background-color: #282C33;
+  font-family: Fira Code, sans-serif;
+  box-sizing: border-box;
+}
+
 .moedas-container {
-  background-color: #b2b2b2;
+  background-color: rgba(255, 255, 255, 0.06) ;
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
   padding: 10px;
-  /* opacity: 6%; */
+  margin: 57px 0;
+  max-width: 900px;
+  min-height: 583px;
+  border-radius: 20px;
 }
 
 .cambio-container {
   padding: 10px;
-  background-color: #FFE713;
+  background-color: rgba(0, 0, 0, 0.2);
   max-width: 100px;
+  color: white;
+  width: 150px;
+  font-size: 16px;
+  height: 44px;
+  border-radius: 5px;
+}
+.valor-moeda{
+  color: #FFE713;
+  font-size: 13px;
+
+}
+
+h1 {
+ color: #fff;
+ font-weight: 700;
+ font-size: 60px
+}
+
+h1 span{
+  color: #96EB95;
+}
+
+p {
+  color: #fff;
+  font-size: 12px;
+}
+
+#input-moeda {
+  border: 0;
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 10px;
+  height: 48px;
+  width: 170px;
+}
+
+#input-moeda[type=text] {
+  color:#fff;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+#input-moeda:focus {
+  border: 0;
+  outline: none !important;
+}
+
+#btn-pesquisar {
+  border-radius: 10px;
+  height: 48px;
+  width: 170px;
+  font-size: 20px;
+  background-color: #96EB95;
+  border: 0;
+  outline: none !important;
+  font-weight: 700;
+}
+
+.moedas-container span:nth-child(1) { 
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 23px;
+  font-weight: 700;
+  font-size: 24px;
 }
