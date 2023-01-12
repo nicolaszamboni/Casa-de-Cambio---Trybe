@@ -8,6 +8,8 @@ body {
   background-color: #282C33;
   font-family: Fira Code, sans-serif;
   box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .moedas-container {
@@ -23,25 +25,28 @@ body {
 }
 
 .cambio-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.2);
-  max-width: 100px;
   color: white;
   width: 150px;
   font-size: 16px;
-  height: 44px;
+  height: 35px;
   border-radius: 5px;
 }
 .valor-moeda{
   color: #FFE713;
   font-size: 13px;
-
 }
 
 h1 {
- color: #fff;
- font-weight: 700;
- font-size: 60px
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  /* margin-top: 63px;
+  margin-left: 306px; */
 }
 
 h1 span{

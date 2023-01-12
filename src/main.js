@@ -22,11 +22,14 @@ function apiFetch(moeda) {
             background: '#282c33',
             color: 'white'
           })
-        }else{
+        }else {
+        const span = document.createElement('span');
+        span.innerHTML = `Valores referentes a 1 ${moeda.toUpperCase()}`
+        document.querySelector('.moedas-container').appendChild(span);
         Object.entries(data.rates).forEach((cambio) => {
         const cambioElement = document.querySelector('.cambio-container');
         const clone = cambioElement.cloneNode(true);
-        clone.style.display = 'block';
+        clone.style.display = 'flex';
         clone.querySelector('.nome-moeda').innerHTML = cambio[0];
         clone.querySelector('.valor-moeda').innerHTML = cambio[1].toFixed(3);
         document.querySelector('.moedas-container').appendChild(clone);
@@ -49,9 +52,6 @@ btnSearch.addEventListener('click', () => {
       color: 'white'
     })
   } else {
-    const span = document.createElement('span');
-    span.innerHTML = `Valores referentes a 1 ${moeda}`
-    document.querySelector('.moedas-container').appendChild(span);
     apiFetch(moeda);
   }
 });
