@@ -6,7 +6,19 @@
     <title>Vite App</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <h1>Casa de Câmbio</h1>
+    <p>Digite a moeda:</p>
+    <div class="input-container">
+      <input type="text" name="moeda" id="input-moeda" placeholder="USD">
+      <button id="btn-pesquisar">Pesquisar</button>
+    </div>
+    <div class="moedas-container">
+    </div>
+    <div class="cambio-container" style="display: none;">
+      <img src="./public/coins.png" alt="moeda">
+      <span class="nome-moeda">USD</span>
+      <span class="valor-moeda">3.251</span>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

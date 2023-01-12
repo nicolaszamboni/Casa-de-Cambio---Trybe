@@ -1,0 +1,14 @@
+.moedas-container {
+  background-color: #b2b2b2;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* opacity: 6%; */
+}
+
+.cambio-container {
+  padding: 10px;
+  background-color: #FFE713;
+  max-width: 100px;
+}
