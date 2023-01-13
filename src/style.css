@@ -83,10 +83,12 @@ p {
   height: 48px;
   width: 170px;
   font-size: 20px;
+  color: #373737;
   background-color: #96EB95;
   border: 0;
   outline: none !important;
   font-weight: 700;
+  font-family: Fira Code, sans-serif;
 }
 
 .moedas-container span:nth-child(1) { 
